@@ -1,5 +1,6 @@
 export default {
-    // Add user property here
+   user: null,
+    // Add user property here -- The initial state of your application.
     cars: [
         {
            "id": 1,
