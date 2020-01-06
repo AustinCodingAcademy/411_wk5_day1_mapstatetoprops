@@ -3,9 +3,11 @@ import Home from "../components/Home";
 
 const mapStateToProps = state => {
 	return {
-		user: state.user,
 		cars: state.cars
 	};
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(
+	mapStateToProps,
+	null
+)(Home);
