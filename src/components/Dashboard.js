@@ -9,10 +9,13 @@ import {
 } from '@material-ui/core'
 
 const Dashboard = (props) => {
+
+    let {username} =  props.user[0]
+
     return (
         <Container maxWidth="lg" className="car-container">
             {/* Change NAME to props.user.username */}
-            <h4>Welcome, {props.users.username}</h4>
+            <h4>Welcome, {username}</h4>
             <Table>
                 <TableHead>
                     <TableRow>
