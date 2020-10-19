@@ -10,16 +10,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    removeCar: (car) => dispatch(removeCar(car))
-    
-
-  }
-
-}
-
 
 // add mapDispatchToProps function here
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
+export default connect(mapStateToProps)(Dashboard)
