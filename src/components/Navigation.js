@@ -4,7 +4,7 @@ import { AppBar, Toolbar, IconButton,
 import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = (props) => {
     return (
         <AppBar position="relative">
             <Toolbar>
@@ -12,7 +12,7 @@ const Navigation = () => {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
-                    FakeCars.com
+                    FakeCars.com -- Welcome {props.user.username}                    
                 </Typography>
                 <ul className="nav-list">
                     <li className="nav-list-item">
