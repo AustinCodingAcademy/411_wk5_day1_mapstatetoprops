@@ -241,6 +241,12 @@ export default {
            "Year":"1970-01-01",
            "Origin":"USA"
         }
+    ],
+    user: [
+       {
+         username:'test-user-1',
+         email: 'test-user@example.com'
+       }
     ]
   };
   
